@@ -1,4 +1,4 @@
-package view
+package component
 
 import (
 	"github.com/charmbracelet/bubbles/textinput"
@@ -40,4 +40,8 @@ func initCard() Card {
 
 func (c Card) Init() tea.Cmd {
 	return textinput.Blink
+}
+
+func (c Card) View() string {
+	return ""
 }
